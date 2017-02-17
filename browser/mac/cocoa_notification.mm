@@ -43,7 +43,7 @@ void CocoaNotification::Show(const base::string16& title,
   if (silent) {
     [notification_ setSoundName:nil];
   } else {
-    [notification_ setSoundName:NSUserNotificationDefaultSoundName];
+    [notification_ setSoundName:@"Ping"];
   }
 
   [NSUserNotificationCenter.defaultUserNotificationCenter
